@@ -5,6 +5,8 @@ def max2(x,y) :
 print(max2(100,200))
 
 def isOrigin (absis,ordinat) :
+    """hgjhgjhhjg
+    ttfyfytft"""
     return absis==0 and ordinat==0
 print(isOrigin(0,1))
 print(isOrigin(0,0))
