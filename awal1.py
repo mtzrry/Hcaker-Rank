@@ -8,6 +8,8 @@ def isOrigin (absis,ordinat) :
     """hgjhgjhhjg
     ttfyfytft"""
     return absis==0 and ordinat==0
+    kszjhfdshkdhszj
+    szdjszghdzsjghzs
 print(isOrigin(0,1))
 print(isOrigin(0,0))
 x = 32**10
