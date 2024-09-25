@@ -2,7 +2,7 @@ def fx4(x) :
     return x*x*x*x
 def max2(x,y) :
     return (int)((x + y) + (fx4(x - y))**0.5)
-print(max2(100,200)) asdasd
+print(max2(100,200)) 
 
 def isOrigin (absis,ordinat) :
     return absis==0 and ordinat==0
