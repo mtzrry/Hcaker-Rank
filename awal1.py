@@ -6,7 +6,7 @@ print(max2(100,200))
 
 def isOrigin (absis,ordinat) :
     return absis==0 and ordinat==0
-    kszjhfdshkdhszj
+    kszjhfdshkdhszjdjshfjshdjf
     szdjszghdzsjghzs
 print(isOrigin(0,1))
 print(isOrigin(0,0))
