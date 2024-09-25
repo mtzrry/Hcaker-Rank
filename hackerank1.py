@@ -1,154 +1,69 @@
-def hargaAkhir(harga : int, kategori : str, VIP : bool, lokasi : str, hari : str) -> int:
-    if int(harga) >0 :
-        if hari == "Jumat" or hari == "Sabtu" or hari == "Minggu" or hari == "Rabu":
-            if kategori == "elektronik":
-                if VIP:
-                    if hari == "Jumat" or hari == "Sabtu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.7) * 0.95) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.7) * 0.95) * 1.2)
-                    elif hari == "Minggu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.7) * 1.05) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.7) * 1.05) * 1.2)
-                    elif hari == "Rabu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.7) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.7) * 1.2)
-                else:
-                    if hari == "Jumat" or hari == "Sabtu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.9) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.9) * 1.2)
-                    elif hari == "Minggu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.9) * 1.05) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.9) * 1.05) * 1.2)
-                    elif hari == "Rabu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.9) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.9) * 1.2)
-            elif kategori == "pakaian":
-                if VIP:
-                    if hari == "Jumat" or hari == "Sabtu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.8) * 0.95) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.8) * 0.95) * 1.2)
-                    elif hari == "Minggu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.8) * 1.05) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.8) * 1.05) * 1.2)
-                    elif hari == "Rabu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.8 * 0.95) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.8 * 0.95) * 1.2)
-                else:
-                    if hari == "Jumat" or hari == "Sabtu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.95) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.95) * 1.2)
-                    elif hari == "Minggu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.95) * 1.05) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.95) * 1.05) * 1.2)
-                    elif hari == "Rabu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.95 * 0.95) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.95 * 0.95) * 1.2)
-            elif kategori == "makanan":
-                if VIP:
-                    if hari == "Jumat" or hari == "Sabtu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.85) * 0.95) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.85) * 0.95) * 1.2)
-                    elif hari == "Minggu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.85) * 1.05) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.85) * 1.05) * 1.2)
-                    elif hari == "Rabu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.85) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.85) * 1.2)
-                else:
-                    if hari == "Jumat" or hari == "Sabtu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.98) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.98) * 1.2)
-                    elif hari == "Minggu":
-                        if lokasi == "dalam negeri":
-                            return int(((harga * 0.98) * 1.05) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int(((harga * 0.98) * 1.05) * 1.2)
-                    elif hari == "Rabu":
-                        if lokasi == "dalam negeri":
-                            return int((harga * 0.98) * 1.1)
-                        if lokasi == "luar negeri":
-                            return int((harga * 0.98) * 1.2)
-        elif hari == "Senin" or hari == "Selasa" or hari == "Kamis":
-            if kategori == "elektronik" and VIP:
-                if lokasi == "dalam negeri":
-                    return int(harga * 0.7 * 1.1)
-                else:
-                    return int(harga * 0.7 * 1.2)
-            elif kategori == "elektronik":
-                if lokasi == "dalam negeri":
-                    return int(harga * 0.9 * 1.1)
-                else:
-                    return int(harga * 0.9 * 1.2)
-            elif kategori == "pakaian" and VIP:
-                if lokasi == "dalam negeri":
-                    return int(harga * 0.8 * 1.1)
-                else:
-                    return int(harga * 0.8 * 1.2)
-            elif kategori == "pakaian":
-                if lokasi == "dalam negeri":
-                    return int(harga * 0.95 * 1.1)
-                else:
-                    return int(harga * 0.95 * 1.2)
-            elif kategori == "makanan" and VIP:
-                if lokasi == "dalam negeri":
-                    return int(harga * 0.85 * 1.1)
-                else:
-                    return int(harga * 0.85 * 1.2)
-            elif kategori == "makanan":
-                if lokasi == "dalam negeri":
-                    return int(harga * 0.98 * 1.1)
-                else:
-                    return int(harga * 0.98 * 1.2)
-            else:
-                if lokasi == "dalam negeri" and hari == "Minggu" :
-                    return int(harga*1.05*1.1)
-                elif lokasi == "luar negeri" and hari == "Minggu" :
-                    return int(harga*1.05*1.2)
-                elif (hari == "Jumat" or hari == "Sabtu") and VIP and lokasi == "dalam negeri" :
-                    return int(harga*0.95*1.1)
-                elif (hari == "Jumat" or hari == "Sabtu") and VIP and lokasi == "luar negeri" :
-                    return int(harga*0.95*1.2)
-                else :
-                    if lokasi == "dalam negeri" :
-                        return int(harga*1.1)
-                    return int(harga*1.2)
+#  nomor 1
+def jam(j,m,s) :
+    if j>=0 and j<=59 and m>=0 and m<=59 and s>=0 and s<=59 :
+        return f"Jam: {j}, Menit: {m}, Detik: {s}"
+    else :
+        return "Waktu tidak valid"
+    
+print(eval(input()))
+
+# nomor 2
+def monitor_pesawat(x,y,z):
+    if y>900 or y<200 :
+        return "Kecepatan Berbahaya"
+    elif x>12000 :
+        return "Terlalu Tinggi"
+    elif z<20 :
+        return "Bahan Bakar Rendah"
+    elif x<5000 and (y>=200 and y<=900) and z>50 :
+        return "Aman untuk Mendarat"
+    else :
+        return "Berjalan Normal"
+    
+print(eval(input()))
+
+# nomor 3
+def fx2(x) :
+    return x*x
+def fx(x) :
+    return x**0.5
+def jalanSemut(x,y,z):
+    if x<=1000 and x>=1 and y<=1000 and y>=1 and z<=1000 and z>=1 :
+        d1 = fx(fx2(x+y)+fx2(z))
+        d2 = fx(fx2(x+z)+fx2(y))
+        d3 = fx(fx2(y+z)+fx2(x))
+        return round(min(d1,d2,d3), 3)
 
 print(eval(input()))
 
+# nomor 4
+def BelajarTenang(dB, m):
+    if dB>=1 and dB<=1000000 and m>=1 and m<=1000000 :
+        jarak_minimal = 15*10**((dB-40)/20)
+        if m>= jarak_minimal :
+            return f"{round((jarak_minimal), 3)} meter"
+        else : 
+            return "Isi bensin dulu, bang"
+print(eval(input()))
 
+# nomor 5
+def denumeratorSeq(x) :
+    if ((10**(len(x))-1) / int(x)) % 1 == 0 :
+        return f"Ada: {int((10**(len(x))-1) / int(x))}"
+    else :
+        return "Tidak ada"
+    
+print(eval(input()))
 
+# nomor 6
+def f(x) :
+    return 3*x**2+2*x-5
+def gradien(a,b) :
+    return (f(a)-f(b))/(a-b)
+
+print(eval(input()))
+
+# nomor 7
 def pajak(harga,lokasi) :
     if lokasi == "dalam negeri" :
         return harga*1.1
@@ -189,8 +104,7 @@ def hargaAkhir(harga : int, kategori : str, VIP : bool, lokasi : str, hari : str
     
 print(eval(input()))
 
-
-
+# nomor 8
 def min2(x, y): return y if x > y else x
 
 def max2(x, y): return x if x > y else y
