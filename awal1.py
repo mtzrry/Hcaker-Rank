@@ -2,13 +2,13 @@ def fx4(x) :
     return x*x*x*x
 def max2(x,y) :
     return (int)((x + y) + (fx4(x - y))**0.5)
-print(max2(100,200)) asdhashdjhasjd
+print(max2(100,200)) asdasd
 
 def isOrigin (absis,ordinat) :
     """hgjhgjhhjg
     ttfyfytft"""
     return absis==0 and ordinat==0
-    kszjhfdshkdhszjdjshfjshdjf
+    kszjhfdshkdhszj
     szdjszghdzsjghzs
 print(isOrigin(0,1))
 print(isOrigin(0,0))
